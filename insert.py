@@ -14,35 +14,35 @@ def number(i):
         return equation[i]
 
 while i<len(equation):
-    if equation[i] >= '0' and equation[i] <= '9':
+    if equation[i] >= '0' and equation[i] <= '9': #cyfra
         l = 0
         onp.append(number(i))
         i += l
-    elif equation[i] == '+' or equation[i] == '-':
+    elif equation[i] == '+' or equation[i] == '-': #dodawanie odejmowanie
         while ws and stack[ws - 1] != '(':
             ws -=1
             onp.append(stack[ws])
             stack.pop(ws)
         stack.append(equation[i])
         ws +=1
-    elif equation[i] == '*' or equation[i] == '/':
+    elif equation[i] == '*' or equation[i] == '/': #mnożenie dzielenie
         while ws and stack[ws - 1] != '(' and stack[ws - 1] != '+' and stack[ws - 1] != '-':
             ws -=1
             onp.append(stack[ws])
             stack.pop(ws)
         stack.append(equation[i])
         ws +=1
-    elif equation[i] == '^':
+    elif equation[i] == '^': #potęgowanie
         while ws and stack[ws - 1] == '^':
             ws -=1
             onp.append(stack[ws])
             stack.pop(ws)
         stack.append(equation[i])
         ws +=1
-    elif equation[i] == '(':
+    elif equation[i] == '(': #początek nawiasu
         stack.append(equation[i])
         ws +=1
-    elif equation[i] == ')':
+    elif equation[i] == ')': #koniec nawiasu
         while stack[ws - 1] != '(':
             ws -=1
             onp.append(stack[ws])
