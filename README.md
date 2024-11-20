@@ -20,3 +20,6 @@
  - Przekształcenia wzorów
  - Operacje na liczbach zespolonych
  - Arytmetyka modularna + NWW i NWD
+
+## Sposób działania
+Użytkownik wpisuje z klawiatury lub wprowadza poprzez interfejs graficzny działanie, które zostaje zapisane historii, przeliczone, a użytkowik otrzyma wynik w preferowanej formie
