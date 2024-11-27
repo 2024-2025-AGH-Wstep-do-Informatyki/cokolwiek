@@ -1,5 +1,5 @@
-# INTELIGENTNY MODULARNY program do robienia OBLICZEŃ zespołu cokolwiek
-
+# Inteligentny Modularny Kalkulator 
+Program do robienia OBLICZEŃ zespołu cokolwiek
 
 ## Koncepty modułów
  - Standardowy kalkulator
