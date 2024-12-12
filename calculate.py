@@ -1,8 +1,4 @@
-import onp
-import insert
-
-def calculate(onp):
-    print(onp)
+def calc(onp):
     output = 0
     i = 0
     operators = {'+','-','*','/'}
@@ -24,4 +20,3 @@ def calculate(onp):
             i-=2
         i+=1
     return onp[0]
-print(calculate(onp.onp(insert.expression())))
