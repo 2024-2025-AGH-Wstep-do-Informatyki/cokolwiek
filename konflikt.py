@@ -1,0 +1,1 @@
+#Generuje przykładowy konflikt
