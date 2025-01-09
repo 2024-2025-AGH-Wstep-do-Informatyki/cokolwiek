@@ -1,3 +1,4 @@
-#Test
+#Generuje przykładowy konflikt
 
-print("przyklad konfliktu")
+for i in range(10):
+    print("konflikt")
