@@ -11,6 +11,8 @@ def calc(onp):
                 onp[i - 2] *= onp[i - 1]
             case '/':
                 onp[i - 2] /= onp[i - 1]
+            case '%':
+                onp[i - 2] %= onp[i - 1]
             case '^':
                 onp[i - 2] **= onp[i - 1]
             case _:
