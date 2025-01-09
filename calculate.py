@@ -1,3 +1,4 @@
+
 def calc(onp):
     i = 0
     operators = {'+','-','*','/','^'}

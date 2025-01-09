@@ -2,7 +2,6 @@ def onp(expression):
     import re
     # Priorytety operatorów
     precedence = {'+': 1, '-': 1, '*': 2, '/': 2, '%':2, '^':3}
-
     # Funkcja sprawdzająca, czy token jest operatorem
     def is_operator(token):
         return token in precedence
