@@ -1,7 +1,6 @@
 def calc(onp):
-    output = 0
     i = 0
-    operators = {'+','-','*','/'}
+    operators = {'+','-','*','/','^'}
     while len(onp) > 1:
         match onp[i]:
             case '+':
@@ -12,6 +11,8 @@ def calc(onp):
                 onp[i - 2] *= onp[i - 1]
             case '/':
                 onp[i - 2] /= onp[i - 1]
+            case '^':
+                onp[i - 2] **= onp[i - 1]
             case _:
                 onp[i] = int(onp[i])
         if onp[i] in operators:

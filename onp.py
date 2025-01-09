@@ -1,7 +1,7 @@
 def onp(expression):
     import re
     # Priorytety operatorów
-    precedence = {'+': 1, '-': 1, '*': 2, '/': 2}
+    precedence = {'+': 1, '-': 1, '*': 2, '/': 2, '^':3}
 
     # Funkcja sprawdzająca, czy token jest operatorem
     def is_operator(token):
@@ -16,7 +16,7 @@ def onp(expression):
         tokens = []
         current_number = ''
         for i, char in enumerate(expression):
-            if char.isdigit() or (char == '-' and (i == 0 or expression[i - 1] in '()+-*/')):
+            if char.isdigit() or (char == '-' and (i == 0 or expression[i - 1] in '()+-*/^')):
                 current_number += char
             else:
                 if current_number:
